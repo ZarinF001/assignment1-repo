@@ -1,3 +1,386 @@
-ul li{
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #F6F8FF;
+}
+/* Font section */
+.raleway-normal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Header Section */
+header{
+    background: url(../image/Hero-bg.png);
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 698px;
+    margin: 0 auto;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    gap:909px;
+    align-items: center;
+    padding: 50px 150px 0 150px;
+}
+
+.logo{
+    color: #4E47FF;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.primary-btn{
+    background-color: #4E47FF;
+    color: white;
+    width: 132px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: orange;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition-duration: 1s;
+}
+
+.banner-content{
+    margin: 0 auto;
+    justify-content: center;
+    width: 905px;
+    height: 237px;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-title{
+    font-size: 65px;
+    font-weight: bold;
+    padding-top: 150px;
+    margin-bottom: 37px;
+}
+
+.banner-btn{
+    width: 174px;
+    height: 48px;
+}
+
+
+/* Action Section */
+.action-section{
+    margin: 116px auto;
+    width: 1140px;
+    height: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 220px;
+}
+
+.action-contents{
+    width: 517px;
+    height: 203px;
+}
+
+.action-contents h2{
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.action-contents p{
+    margin: 23px 0;
+    color: rgba(37, 36, 50, 0.5);
+    font-size: 24px;
+    font-weight: 400;
+    width: 517px;
+}
+
+.action-btn{
+    margin-top: 0px;
+    width: 229px;
+}
+
+.action-img{
+    width: 403px;
+    border-radius: 48px;
+}
+
+
+/* Productive section */
+.productive-section{
+    margin: 0 auto;
+    width: 1140px;
+    height: 306px;
+    border-radius: 24px;
+    background-color: rgba(78, 71, 255, 0.1);
+    text-align: center;
+}
+
+.product-container{
+    width: 856px;
+    height: 206px;
+    padding: 50px 142px;
+    margin: 0 auto;
+}
+.product-title{
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.stats-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 167px;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.stats h2{
+    color: #4e47ff;
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
+
+.stats p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Review section */
+.review{
+    text-align: center;
+    padding:130px 0px 100px 0px;
+}
+
+.review-title{
+    font-size: 42px;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+
+.review-container {
+    width: 1140px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.review-content{
+    text-align: left;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #F2EDED;
+    padding: 24px;
+    width: 366px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-content h1{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.review-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(107, 107, 112);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+}
+
+.user h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+    padding-bottom: 6px;
+}
+
+.user p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+/* Focus section */
+.focus{
+    width: 1140px;
+    height: 696.77;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.focus h1{
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 71px;
+    margin-bottom: 20px;
+}
+
+.focus p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.focus-btn{
+    width: 195px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.focus img {
+  max-width: 100%;
+  border-radius: 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 71px;
+}
+
+
+/* Touch Selection */
+.touch-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    height: 632px;
+    gap: 115px;
+}
+
+.touch-section h1{
+    font-size: 97px;
+    font-weight: 700;
+    color: black;
+}
+
+label{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+input{
+    border: .5px solid rgba(200, 200, 223, 0.726);
+    outline:none;
+    width: 465px;
+    height: 70px;
+    background-color:1px solid white;
+    border-radius: 10px;
+    padding-left: 32px;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+textarea{
+    width: 465px;
+    height: 135px;
+    border-radius: 10px;
+    border: .5px solid rgba(200, 200, 223, 0.726);
+    outline: none;
+    padding-left: 32px;
+    padding-top: 19px;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+.form-btn{
+    width: 497px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 19px;
+}
+/* Footer section */
+.footer-section{
+    margin: 0 auto;
+    width: 1440px;
+    height: 428px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer-content{
+    width: 531px;
+    height: 221px;
+    margin: 104px auto;
+    padding-top: 104px;
+}
+
+.footer-content h1{
+    color: #4E47FF;
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.footer-content p{
+    color: rgba(137, 135, 161, 1);
+    font-size: 16px;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+.footer-link{
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+.footer-link a{
     text-decoration: none;
+    font-size: 16px;
+    color: rgba(137, 135, 161, 1);
 }
